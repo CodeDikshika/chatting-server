@@ -50,6 +50,10 @@ const server = createServer(app);
 const io = new Server(server, {
   cors: corsOptions,
 });
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.set("io", io);
 
