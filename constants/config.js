@@ -1,5 +1,5 @@
 const corsOptions = {
-  origin:"https://chatting-frontend-eight.vercel.app/login",
+  origin:"https://chatting-frontend-eight.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
